@@ -1,0 +1,456 @@
+body {
+    font-family: 'Slabo 27px', serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+#nav-button {
+    display: none;
+    max-width: 60px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+/*----------------------------------Header with logo and navigation-------------------------------------*/
+.header {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 460px;
+    margin-top: 10px;
+}
+
+.header a {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 0.8em;
+    border-radius: 4px;
+    transition: background-color 0.8s;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header a {
+    margin-right: 0.5em;
+}
+
+.header a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.header .active {
+    color: #E3181B;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a::after {
+    content: "\25bc";
+    font-size: 12px;
+    margin-left: 12px;
+}
+
+ul.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 2px 2px 5px black;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s;
+}
+
+.dropdown-menu a {
+    background: none;
+    transition: color 0.8s;
+}
+
+.dropdown-menu a:hover {
+    background: none;
+    color: #E3181B;
+}
+
+.dropdown-menu li {
+    padding-top: 10px;
+}
+
+.dropdown-menu li:last-child {
+    padding-bottom: 10px;
+}
+
+
+li.dropdown:hover > .dropdown-menu {
+    max-height: 600px;
+
+}
+
+
+/*---------------------------------Banner picture----------------------------------*/
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------------------------------Main content----------------------------------*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex 1;
+    margin-right: 50px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.one {
+    background-image: url(news.jpg);
+}
+
+.two {
+    background-image: url(news2.jpg);
+}
+
+.three {
+    background-image: url(news3.jpg);
+}
+
+
+.circle img {
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.column p {
+    margin: 30px auto;
+    max-width: 80%;
+    padding: 0.5em;
+    border: 1px solid white;
+}
+
+
+/*--------------------------------------Newsletter banner and form-----------------------------*/
+.newsletter {
+    display: flex;
+    background-image: url(newsletter.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 9px black;
+    margin-top: 15%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.newsletter-form input {
+    padding: 5px;
+    font-size: 2vw;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+}
+
+.newsletter-form button {
+    background
+    padding: 5px;
+    font-size: 2vw;
+    border-radius: 0 10px 10px 0;
+    border: 0;
+}
+
+/*-----------------------------------Footer with social media links----------------------------------*/
+
+.footer {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    font-size: 32px;
+}
+
+
+/*----------------------------------First breakpoint----------------------------------*/
+@media only screen and (max-width: 1200px) {
+
+    .logo {
+        max-width: 360px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*----------------------------------Breakpoint just for the font----------------------------------*/
+
+@media only screen and (max-width: 859px) {
+    .header a {
+        font-size: 16px;
+    }
+
+}
+
+/*----------------------------------Tablet Breakpoint----------------------------------*/
+
+@media only screen and (max-width: 768px) {
+    #nav-button {
+        display: block;
+        margin-left: 5px;
+    }
+
+    .logo {
+        height: 120px;
+        padding-right: 10px;
+        margin-right: 0;
+    }
+
+    .header a {
+        background: none;
+    }
+
+    .navigation > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .navigation li {
+        padding: 10px;
+    }
+
+    .navigation {
+        z-index: 999;
+        top: 100%;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 35%;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 2px 2px 5px black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+
+    .navigation.open {
+        background-color: rgba(0, 0, 0, 0.8);
+        max-height: 30vh;
+        transition: max-height 1s;
+    }
+
+    .dropdown {
+        margin-bottom: 60px;
+    }
+
+    ul.dropdown-menu {
+        top: 25px;
+        left: 50px;
+        padding: 0;
+        background: none;
+        overflow: visible;
+    }
+
+    li.dropdown:hover > .dropdown-menu {
+        max-height: 0;
+
+    }
+
+    .row {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .column {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+/*Title*/
+    .column :nth-child(1) {
+        order: 2;
+        flex: 1;
+        text-align: right;
+        margin-right: 25%;
+    }
+/*Picture*/
+    .column :nth-child(2) {
+        order: 1;
+        left: 0;
+        position: absolute;
+        z-index: 998;
+        margin: 0;
+        margin-left: 5px;
+    }
+/*Text*/
+    .column :nth-child(3) {
+        order: 3;
+        flex-grow: 1;
+        margin-left: 180px;
+        margin-top: 0;
+    }
+
+    .column:last-child {
+        margin-right: 10px;
+    }    
+
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*----------------------------------Font breabkpoint----------------------------------*/
+
+@media only screen and (max-width: 615px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+/*----------------------------------Phone breakpoint----------------------------------*/
+
+@media only screen and (max-width: 480px) {
+    .circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .column :nth-child(2) {
+        margin-top: 6%;
+    }
+
+    .column :nth-child(3) {
+        margin-left: 120px;
+
+    }
+
+    .navigation {
+        width: 45%;
+    }
+
+    .navigation.open {
+        max-height: 40vh;
+    }
+}
+
+/*----------------------------------Old phone breakpoint----------------------------------*/
+
+@media only screen and (max-width: 321px) {
+    .logo {
+        height: 80px;
+        padding-right: 10px;
+        margin-right: 0;
+    }
+
+    .navigation.open {
+        max-height: 50vh;
+    }
+
+    .navigation {
+        width: 55%;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    .column :nth-child(1) {        
+        margin-right: 10%;
+    }
+    
+}
+        
+        
+    
