@@ -54,7 +54,7 @@ img {
     margin-right: 0.5em;
 }
 
-.header a:hover {
+.header a:hover, .header a:focus {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -165,7 +165,7 @@ h2 {
     overflow: hidden;
     border: 2px solid white;
     border-radius: 50%;
-    background-position: left;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -192,13 +192,13 @@ h2 {
 .column p {
     margin: 30px auto;
     max-width: 80%;
-    padding: 0.5em;
-    border: 1px solid white;
+    padding: 0.5em;    
 }
 
 
 /*--------------------------------------Newsletter banner and form-----------------------------*/
 .newsletter {
+    margin-top: 10px;
     display: flex;
     background-image: url(newsletter.jpg);
     background-position: left;
@@ -233,7 +233,7 @@ h2 {
 /*-----------------------------------Footer with social media links----------------------------------*/
 
 .footer {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.3));
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -245,8 +245,13 @@ h2 {
     color: white;
     padding: 1em;
     font-size: 32px;
+    transition: color 0.8s;
 }
 
+.footer a:hover, .footer a:focus {
+    color: #E3181B;
+    
+}
 
 /*----------------------------------First breakpoint----------------------------------*/
 @media only screen and (max-width: 1200px) {
@@ -378,7 +383,8 @@ h2 {
         order: 3;
         flex-grow: 1;
         margin-left: 180px;
-        margin-top: 0;
+        
+        
     }
 
     .column:last-child {
@@ -413,6 +419,7 @@ h2 {
 
     .column :nth-child(3) {
         margin-left: 120px;
+        margin-top: 0;
 
     }
 
