@@ -1,26 +1,26 @@
 .one {
     background-image: url(product1.jpg);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .two {
     background-image: url(product2.jpeg);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .three {
     background-image: url(product3.jpg);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .four {
     background-image: url(product4.jpg);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .five {
     background-image: url(product5.jpg);
-    transition: all 0.8s;
+    transition: transform 0.8s;
 }
 
 .circle:hover {
