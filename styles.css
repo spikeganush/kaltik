@@ -267,7 +267,7 @@ h2 {
 /*----------------------------------Lightbox----------------------------------*/
 
 #lightbox{
-  display: none; 
+  display: none;    
   position: fixed; 
   z-index: 1;   
   left: 0;
@@ -279,6 +279,11 @@ h2 {
 }
 
 #lightbox-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
   position: relative;
   background-color: #c3c3c3;
   margin: 15% auto; 
@@ -301,7 +306,7 @@ h2 {
   to {top:0; opacity:1}
 }
 
-.close {
+.close {    
   color: white;
   float: right;
   font-size: 28px;
