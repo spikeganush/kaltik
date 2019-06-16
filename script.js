@@ -10,26 +10,29 @@ window.addEventListener('load', function () {
         }
     });
 
-    let images = document.querySelector('.circle');
-    images.addEventListener('click', function (evt) {
-//        let clicked = evt.backgroundImage;
+    let div = document.getElementsByClassName('circle');
+    
+    console.log(div);
+    for (var i in div){
+    div[i].addEventListener('click', function () {
+//        let clicked = evt.background-Image;
         let clicked = window.getComputedStyle(this, 
-    null).getPropertyValue("background-Image");
+    null).getPropertyValue('background-Image');
         let source = clicked.slice(4, -1).replace(/"/g, "");
-        console.log(images);
+        console.log(source);
 //        let source = clicked.url;
         document.querySelector('#lightbox img').setAttribute('src', source);
         document.querySelector('#lightbox').classList.add('show');
         document.querySelector('.close').addEventListener('click', function () {
-            document.querySelector('#lightbox').classList.remove('show');
+        document.querySelector('#lightbox').classList.remove('show');
         });
-        var lightbox = document.getElementById("lightbox")
+        let lightbox = document.getElementById("lightbox")
         window.onclick = function(event) {
   if (event.target == lightbox) {
     document.querySelector('#lightbox').classList.remove('show');
   }
 }
         
-    });
+    });}
 
 });
