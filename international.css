@@ -1,0 +1,61 @@
+.one {
+    background-image: url(Nicolas.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(Danilo.jpg);
+    transition: transform 0.8s;
+}
+
+.three {
+    background-image: url(Philip.png);
+    transition: transform 0.8s;
+}
+
+.four {
+    background-image: url(mery.jpg);
+    transition: transform 0.8s;
+}
+
+.five {
+    background-image: url(anthony.jpg);
+    transition: transform 0.8s;
+}
+
+.six {
+    background-image: url(remy.jpg);
+    transition: transform 0.8s;
+}
+
+.seven {
+    background-image: url(jack.jpg);
+    transition: transform 0.8s;
+}
+
+.eight {
+    background-image: url(egor.jpg);
+    transition: transform 0.8s;
+}
+
+.nine {
+    background-image: url(gabriel.jpg);
+    transition: transform 0.8s;
+}
+
+.ten {
+    background-image: url(stephane.jpg);
+    transition: transform 0.8s;
+}
+
+.eleven {
+    background-image: url(joey.jpeg);
+    transition: transform 0.8s;
+}
+
+.twelve {
+    background-image: url(toru.jpg);
+    transition: transform 0.8s;
+}
+
+

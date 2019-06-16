@@ -1,0 +1,46 @@
+.one {
+    background-image: url(platines-kaltik-flat-black.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(platines-kaltik-flat-nylon.jpg);
+    transition: transform 0.8s;
+}
+
+.three {
+    background-image: url(platines-kaltik-flat-schopfer-nicolas.jpg);
+    transition: transform 0.8s;
+}
+
+.four {
+    background-image: url(platines-kaltik-flat-purple.jpg);
+    transition: transform 0.8s;
+}
+
+.five {
+    background-image: url(kaltik-a-feinberg-flat-frames.jpg);
+    transition: transform 0.8s;
+}
+
+.six {
+    background-image: url(kaltik-freestyle-white-frames.jpg);
+    transition: transform 0.8s;
+}
+
+.seven {
+    background-image: url(kaltik-baats-ufs-frame.jpg);
+    transition: transform 0.8s;
+}
+
+.eight {
+    background-image: url(kaltik-flat-v2.jpg);
+    transition: transform 0.8s;
+}
+
+.nine {
+    background-image: url(kaltik-freestyle-blue-frames.jpg);
+    transition: transform 0.8s;
+}
+
+

@@ -1,0 +1,8 @@
+.one {
+    background-image: url(tshirt-kaltik-face-tee-blue.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(casquette-kaltik-grey-wool-5-panel.jpg);
+    transition: transform 0.8s;

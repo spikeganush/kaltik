@@ -1,0 +1,24 @@
+.one {
+    background-image: url(kaltik-mad-yokes-white-wheels-x4.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(kaltik-wildyokes-black-wheels-abec-9-x4.jpg);
+    transition: transform 0.8s;
+}
+
+.three {
+    background-image: url(kaltik-wildyokes-white-wheels-x4.jpg);
+    transition: transform 0.8s;
+}
+
+.four {
+    background-image: url(kaltik-big-yokes-wheels-x4.jpg);
+    transition: transform 0.8s;
+}
+
+.five {
+    background-image: url(kaltik-phanjangoez-wheels-x8.jpg);
+    transition: transform 0.8s;
+}

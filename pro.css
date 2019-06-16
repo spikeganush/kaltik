@@ -1,0 +1,20 @@
+.one {
+    background-image: url(Roman_Abrate.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(Stephen_swain.jpg);
+    transition: transform 0.8s;
+}
+
+.three {
+    background-image: url(Winston_Wardell.jpg);
+    transition: transform 0.8s;
+}
+
+.four {
+    background-image: url(Eito.jpg);
+    transition: transform 0.8s;
+}
+

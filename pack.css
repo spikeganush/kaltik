@@ -1,0 +1,14 @@
+.one {
+    background-image: url(pack_v2.jpg);
+    transition: transform 0.8s;
+}
+
+.two {
+    background-image: url(pack_abrate.png);
+    transition: transform 0.8s;
+}
+    
+.three {
+    background-image: url(kaltik-clic-n-baats-ufs-3x100-frame.jpg);
+    transition: transform 0.8s;    
+}
