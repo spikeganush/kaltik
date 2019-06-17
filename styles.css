@@ -400,7 +400,7 @@ h2 {
 
     .navigation.open {
         background-color: rgba(0, 0, 0, 0.8);
-        max-height: 30vh;
+        max-height: 600px;
         transition: max-height 1s;
     }
 
@@ -498,11 +498,7 @@ h2 {
 
     .navigation {
         width: 45%;
-    }
-
-    .navigation.open {
-        max-height: 40vh;
-    }
+    }   
 }
 
 /*----------------------------------Old phone breakpoint----------------------------------*/
@@ -512,11 +508,7 @@ h2 {
         height: 80px;
         padding-right: 10px;
         margin-right: 0;
-    }
-
-    .navigation.open {
-        max-height: 50vh;
-    }
+    }    
 
     .navigation {
         width: 55%;
