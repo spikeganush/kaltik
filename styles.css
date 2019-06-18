@@ -32,33 +32,33 @@ img {
 }
 
  .top {
-        transform: rotate(0deg);
-        transition: transform 0.8s;
-    }
+     transform: rotate(0deg);
+     transition: transform 0.8s;
+ }
 
-    .down {
-        transform: rotate(0deg);
-        transition: transform 0.8s;
-    }
+ .down {
+     transform: rotate(0deg);
+     transition: transform 0.8s;
+ }
 
-    .top.open {    
-        transform-origin: center center;
-        transform: translateY(11px) rotate(-45deg);
-    }
+ .top.open {
+     transform-origin: center center;
+     transform: translateY(11px) rotate(-45deg);
+ }
 
-    .down.open {
-        transform-origin: center center;
-        transform: translateY(-11px) rotate(45deg);
-    }
+ .down.open {
+     transform-origin: center center;
+     transform: translateY(-11px) rotate(45deg);
+ }
 
-    .mid.open {
-        opacity: 1;
-        transition: opacity 0.8s;
-    }
+ .mid.open {
+     opacity: 1;
+     transition: opacity 0.8s;
+ }
 
-    .mid.open {
-        opacity: 0;
-    }
+ .mid.open {
+     opacity: 0;
+ }
 /*----------------------------------Header with logo and navigation-------------------------------------*/
 .header {
     position: relative;
