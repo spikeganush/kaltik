@@ -1,12 +1,21 @@
 window.addEventListener('load', function () {
-    var button = document.querySelector('#nav-button');
+    var button = document.querySelector('.nav-button');
     var nav = document.querySelector('.navigation');
+    var top = document.querySelector('.top');
+    var mid = document.querySelector('.mid');
+    var down = document.querySelector('.down');
 
     button.addEventListener('click', function () {
         if (nav.classList.contains('open')) {
             nav.classList.remove('open');
+            top.classList.remove('open');
+            mid.classList.remove('open');
+            down.classList.remove('open');
         } else {
             nav.classList.add('open');
+            top.classList.add('open');
+            mid.classList.add('open');
+            down.classList.add('open');
         }
     });
 
