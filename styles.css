@@ -427,6 +427,7 @@ h2 {
         flex-direction: column;
         align-items: flex-start;
         width: 35%;
+	background-color: rgba(0, 0, 0, 0.8);
         border-radius: 0 5px 5px 0;
         box-shadow: 2px 2px 5px black;
         max-height: 0;
@@ -434,8 +435,7 @@ h2 {
         transition: max-height 1s;
     }
 
-    .navigation.open {
-        background-color: rgba(0, 0, 0, 0.8);
+    .navigation.open {        
         max-height: 600px;
         transition: max-height 1s;
     }
