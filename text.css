@@ -97,6 +97,7 @@ img {
 
 .header .active {
     color: #E3181B;
+    font-style: italic;
 }
 
 .navigation ul {

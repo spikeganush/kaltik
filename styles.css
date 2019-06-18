@@ -95,6 +95,7 @@ img {
 
 .header .active {
     color: #E3181B;
+    font-style: italic;
 }
 
 .navigation ul {
@@ -152,6 +153,14 @@ li.dropdown:hover > .dropdown-menu {
 
 }
 
+.header .dropdown_active {
+        color: #E3181B;
+        font-style: italic;
+    }
+
+.header .dropdown_active:hover {
+        color: white;
+    }
 
 /*---------------------------------Banner picture----------------------------------*/
 .banner {
@@ -302,8 +311,10 @@ h2 {
 /*----------------------------------Lightbox----------------------------------*/
 
 #lightbox{
-  display: none;    
-  position: fixed; 
+  display: none;
+  grid-template-columns:auto auto auto;
+  grid-template-rows: auto auto auto; 
+  position: fixed;    
   z-index: 999;   
   left: 0;
   top: 0;
@@ -311,28 +322,32 @@ h2 {
   height: 100%; 
   overflow: auto;  
   background-color: rgba(0,0,0,0.7); 
+
 }
 
 #lightbox-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    
+  display: grid;
+ grid-column-start: 2;
+ grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  float: left;   
   position: relative;
-  background-color: #c3c3c3;
-  margin: 15% auto; 
-  padding: 15px;
-  border: 1px solid white;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  grid-template-columns:28px auto 28px ;
+  grid-template-rows: 28px auto 28px;   
+  background-color: #c3c3c3;  
   animation-name: fromthetop;
   animation-duration: 0.8s;    
 }
 
-.result {
-    margin: auto;
-}
+.resultLighbox {
+    box-shadow: 2px 2px 5px black;    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    place-self: center;
+    }
 
 
 
@@ -346,6 +361,12 @@ h2 {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center; 
+  text-shadow: 2px 2px 2px black;
 }
 
 .close:hover,
@@ -353,10 +374,11 @@ h2 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  text-shadow: 2px 2px 2px white;
 }
 
 #lightbox.show{
-	display: block;	
+	display: grid;	
 }
 
 
@@ -450,6 +472,8 @@ h2 {
         background: none;
         overflow: visible;
     }
+    
+    
 
     li.dropdown:hover > .dropdown-menu {
         max-height: 0;
